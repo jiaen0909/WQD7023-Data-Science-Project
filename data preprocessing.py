@@ -8,15 +8,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.svm import SVC
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import silhouette_score, accuracy_score, confusion_matrix, precision_score, f1_score, recall_score, roc_curve, auc, precision_recall_curve, classification_report
-from gensim.models.ldamodel import LdaModel
-from gensim.models.coherencemodel import CoherenceModel
-from sklearn.decomposition import PCA
 
 # Read Dataset
 df=pd.read_csv("full complaints.csv")
